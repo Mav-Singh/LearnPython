@@ -65,6 +65,19 @@ while "_" in placeholder:
 print(f"Congratulations! You guessed the word: {chosen_word}")
 #improve the upper for loop to keep recording evey guessed word
 
+------------------------------------------Another session of fixing the stuff...................
+import random
+word = ['bat','pig','ant']
+random_word = random.choice(word)
+print(random_word)
+
+#add placeholders in a new list
+guessed_word = []
+guessed_word = '_ '*len(random_word)
+print(guessed_word)
+
+# replacing the _ with correctly guessed alphabet
+
 
 
 
