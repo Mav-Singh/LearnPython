@@ -72,12 +72,16 @@ random_word = random.choice(word)
 print(random_word)
 
 #add placeholders in a new list
-guessed_word = []
-guessed_word = '_ '*len(random_word)
-print(guessed_word)
+guessed_word = ['_ ']*len(random_word)
+print(" ".join(guessed_word))
+
+#asking for a guess from a user 
+guess = input("Guess the alphabet to make the entire word")
 
 # replacing the _ with correctly guessed alphabet
-
+for i in range(len(random_word)):
+    if random_word[i] == guess:
+        guessed_word[i] = guess
 
 
 
