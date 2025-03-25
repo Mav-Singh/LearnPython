@@ -1,5 +1,7 @@
 
-----------------------------Fix the while loop to stop when the results are met----------------
+#----------------------------This is now completely working code----------------
+#-------enhance the code---
+#understand how the for loop worked to add the guessed word in the exact location
 import random
 word = ['bat','pig','ant']
 random_word = random.choice(word)
