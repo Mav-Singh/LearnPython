@@ -1,19 +1,22 @@
 
-#----------------------------This is now completely working code----------------
-#-------enhance the code---
-#understand how the for loop worked to add the guessed word in the exact location
+#Import Modules
 import random
-word = ['bat','pig','ant']
-random_word = random.choice(word)
-print(f"Random Word: {random_word}")
-final = None
 
-#add placeholders in a new list
+#Create a list of words
+word = ['bat','pig','ant']
+
+#randomly choose a word from the list 
+random_word = random.choice(word)
+
+#Variables for later use
+final_word = None
+
+#add placeholders to Guessed word based on the length of the random word
 guessed_word = ['_ ']*len(random_word)
 print(" ".join(guessed_word))
 
 #keep asking for a guess from a user
-while final !=  random_word:
+while final_word!=  random_word:
     guess = input("Guess the alphabet to make the entire word: ")
 
 # replacing the _ with correctly guessed alphabet
@@ -21,7 +24,7 @@ while final !=  random_word:
         if random_word[i] == guess:
             guessed_word[i] = guess
     print(" ".join(guessed_word))
-    print(f"guessed_word: {guessed_word}")
     final_word = "".join(guessed_word)
+print("Congratulations you guessed the word right")
 
-#fix the while loop when the value of random + I am checking using f strings to verify where I am wrong
+#Next things to do: make this program as required in 100 days of python program
