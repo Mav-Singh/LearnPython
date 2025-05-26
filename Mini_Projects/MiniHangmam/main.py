@@ -1,9 +1,14 @@
+#add how many chances are left for wrong tries
+#(example: if one wrong guess, display 1 of 5 chances used)
+#use modules to display the handman picture
+
+
 
 #Import Modules
 import random
 
 #Create a list of words
-word = ['bat','pig','ant']
+word = ['batman','pig','ant']
 
 #randomly choose a word from the list 
 random_word = random.choice(word)
@@ -12,8 +17,8 @@ random_word = random.choice(word)
 final_word = None
 
 #add placeholders to Guessed word based on the length of the random word
-guessed_word = ['_ ']*len(random_word)
-print(" ".join(guessed_word))
+guessed_word = ['_']*len(random_word)
+print("Word to Guess: "," ".join(guessed_word))
 
 #keep asking for a guess from a user
 while final_word!=  random_word:
